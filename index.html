@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>Real Time Image Identification App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="background1.jpg">
+<center>
+  <h3 class="btn btn-primary heading">AI Object Finder
+    <center>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+       The input name which will you give should match the names present in CoCo model then only it will detect   
+        <br>
+        </div>
+    </center>
+    <br>
+  </h3>
+  <br><br>
+  <label id="object_name">Object Name: </label>
+  <input type="text" id="thing_name" class="form-control">
+  <br>
+  <br>
+  <button onclick="start();" class="btn btn-success" id="start">Start</button>
+  <br><br>
+  <h3 class="btn btn-danger" id="status"></h3>
+  <h3 class="btn btn-warning" id="number_of_objets"></h3>
+  
+
+</center>
+
+
+
+<script src="main.js"></script>
+</body>
+
+</html>
